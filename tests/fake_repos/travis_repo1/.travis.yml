@@ -1,0 +1,45 @@
+addons:
+   apt:
+     packages:
+       - nodejs
+
+dist: focal
+
+language: python
+
+sudo: false
+
+python:
+   - '3.8'
+   - '3.6'
+env:
+   - TOXENV=js
+   - TOXENV=quality
+   - TOXENV=django30
+matrix:
+  allow_failures:
+    - python: 3.8
+      env: TOXENV=django30
+before_install:
+  - pip install -U pip
+
+cache:
+  directories:
+    - $HOME/.cache/pip
+
+install:
+  - pip install -r requirements/travis.txt
+
+script:
+  - tox
+
+deploy:
+  provider: pypi
+  user: edx
+  distributions: sdist bdist_wheel
+  on:
+    tags: true
+    condition: $TOXENV = quality
+    python: 3.8
+  password:
+    secure: F7yrAFt9c56YefzkR147oW9db2lTA

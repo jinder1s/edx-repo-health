@@ -3,9 +3,9 @@ Checks to see if travis.yml follows minimum standards
 And gathers info
 """
 import os
+from collections.abc import Iterable
 import pytest
 import yaml
-
 from pytest_repo_health import add_key_to_metadata
 from repo_health import get_file_content
 
@@ -46,15 +46,29 @@ def check_yaml_parsable(travis_yml, all_results):
         all_results[module_dict_key]["parsable"] = False
 
 
+def get_python_versions(travis_python_versions):
+    """
+    @return list of float python versions
+    """
+    python_versions = []
+    if isinstance(travis_python_versions, Iterable) and not isinstance(travis_python_versions, str):
+        for python_version in travis_python_versions:
+            python_versions.append(float(python_version))
+        return python_versions
+    else:
+        return [float(travis_python_versions)]
+
+
 @pytest.fixture(name="python_versions_in_travis")
 def fixture_python_version(parsed_data_travis):
     """
     The list of python versions in travis tests
     """
     python_versions = set()
+
     if "python" in parsed_data_travis.keys():
-        py_versions = parsed_data_travis["python"]
-        python_versions = set([py_versions] if isinstance(py_versions, float) else py_versions)
+        python_versions = get_python_versions(parsed_data_travis["python"])
+        python_versions = set(python_versions)
 
     if "matrix" in parsed_data_travis.keys():
         workers = None
