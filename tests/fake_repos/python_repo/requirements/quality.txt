@@ -77,7 +77,7 @@ pluggy==0.13.1
     # via
     #   -r requirements/test.txt
     #   pytest
-psutil==1.2.1
+psutil==5.6.6
     # via
     #   -r requirements/test.txt
     #   edx-django-utils

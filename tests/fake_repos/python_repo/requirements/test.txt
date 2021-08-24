@@ -36,7 +36,7 @@ packaging==20.9
     # via pytest
 pluggy==0.13.1
     # via pytest
-psutil==1.2.1
+psutil==5.6.6
     # via
     #   -r requirements/base.txt
     #   edx-django-utils
