@@ -3,25 +3,6 @@ utils used to create dashboard
 """
 import csv
 import html
-from pathlib import Path
-
-import requests
-
-DJANGO_DEPS_SHEET_URL = "https://docs.google.com/spreadsheets/d/" \
-                        "19-BzpcX3XvqlazHcLhn1ZifBMVNund15EwY3QQM390M/export?format=csv"
-
-
-def get_django_dependency_sheet():
-    """
-    Returns the path for csv file which contains django dependencies status.
-    Also, makes a request for latest sheet & dumps response into the csv file if request was successful.
-    """
-    res = requests.get(DJANGO_DEPS_SHEET_URL)
-    if res.status_code == 200:
-        with open(Path(__file__).with_name('django_dependencies_sheet.csv'), 'w', encoding="utf8") as fp:
-            fp.write(res.text)
-
-    return Path(__file__).with_name('django_dependencies_sheet.csv')
 
 
 def squash_dict(input_dict, delimiter="."):
