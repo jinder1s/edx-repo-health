@@ -4,7 +4,6 @@ This package contains checks for edx repo standards
 import codecs
 import os
 from configparser import ConfigParser
-from pathlib import Path
 import glob
 import pytest
 import dockerfile
@@ -13,6 +12,9 @@ __version__ = "0.1.6"
 
 
 GITHUB_URL_PATTERN = r"github.com[/:](?P<org_name>[^/]+)/(?P<repo_name>[^/]+).*#egg=(?P<package>[^\/]+).*"
+PYPI_PACKAGE_PATTERN = r"(?P<package_name>[^\/]+)==(?P<version>[^\/]+)"
+DJANGO_DEPS_SHEET_URL = "https://docs.google.com/spreadsheets/d/" \
+                        "19-BzpcX3XvqlazHcLhn1ZifBMVNund15EwY3QQM390M/export?format=csv"
 
 
 def parse_config_file(path):
