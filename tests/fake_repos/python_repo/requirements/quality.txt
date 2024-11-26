@@ -136,7 +136,7 @@ six==1.15.0
     #   python-dateutil
 snowballstemmer==2.1.0
     # via pydocstyle
-sqlparse==0.4.1
+sqlparse==0.4.4
     # via
     #   -r requirements/test.txt
     #   django
