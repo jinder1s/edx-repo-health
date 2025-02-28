@@ -6,11 +6,11 @@
 #
 accessible-pygments==0.0.5
     # via pydata-sphinx-theme
-aiohappyeyeballs==2.4.4
+aiohappyeyeballs==2.4.6
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/test.txt
     #   aiohttp
-aiohttp==3.11.11
+aiohttp==3.11.13
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/test.txt
     #   github-py
@@ -21,21 +21,21 @@ aiosignal==1.3.2
     #   aiohttp
 alabaster==0.7.16
     # via sphinx
-attrs==24.3.0
+attrs==25.1.0
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/test.txt
     #   aiohttp
-babel==2.16.0
+babel==2.17.0
     # via
     #   pydata-sphinx-theme
     #   sphinx
-beautifulsoup4==4.12.3
+beautifulsoup4==4.13.3
     # via pydata-sphinx-theme
-cachetools==5.5.0
+cachetools==5.5.2
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/test.txt
     #   google-auth
-certifi==2024.12.14
+certifi==2025.1.31
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/test.txt
     #   requests
@@ -43,13 +43,13 @@ charset-normalizer==3.4.1
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/test.txt
     #   requests
-coverage[toml]==7.6.10
+coverage[toml]==7.6.12
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/test.txt
     #   pytest-cov
 doc8==1.1.2
     # via -r requirements/doc.in
-dockerfile==3.3.1
+dockerfile==3.4.0
     # via -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/test.txt
 docutils==0.21.2
     # via
@@ -73,7 +73,7 @@ gitpython==3.1.44
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/test.txt
     #   pytest-repo-health
-google-auth==2.37.0
+google-auth==2.38.0
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/test.txt
     #   google-auth-oauthlib
@@ -106,7 +106,7 @@ multidict==6.1.0
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/test.txt
     #   aiohttp
     #   yarl
-nh3==0.2.20
+nh3==0.2.21
     # via readme-renderer
 oauthlib==3.2.2
     # via
@@ -116,15 +116,16 @@ packaging==21.3
     # via
     #   -c /home/runner/work/edx-repo-health/edx-repo-health/requirements/constraints.txt
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/test.txt
+    #   pydata-sphinx-theme
     #   pytest
     #   sphinx
-pbr==6.1.0
+pbr==6.1.1
     # via stevedore
 pluggy==1.5.0
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/test.txt
     #   pytest
-propcache==0.2.1
+propcache==0.3.0
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/test.txt
     #   aiohttp
@@ -138,9 +139,9 @@ pyasn1-modules==0.4.1
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/test.txt
     #   google-auth
-pydata-sphinx-theme==0.16.1
+pydata-sphinx-theme==0.15.4
     # via sphinx-book-theme
-pygments==2.18.0
+pygments==2.19.1
     # via
     #   accessible-pygments
     #   doc8
@@ -159,7 +160,7 @@ pytest==8.0.2
     #   pytest-asyncio
     #   pytest-cov
     #   pytest-repo-health
-pytest-aiohttp==1.0.5
+pytest-aiohttp==1.1.0
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/test.txt
     #   pytest-repo-health
@@ -188,7 +189,7 @@ requests-oauthlib==2.0.0
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/test.txt
     #   google-auth-oauthlib
-responses==0.25.3
+responses==0.25.6
     # via -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/test.txt
 restructuredtext-lint==1.4.0
     # via doc8
@@ -209,7 +210,7 @@ sphinx==7.3.7
     #   -r requirements/doc.in
     #   pydata-sphinx-theme
     #   sphinx-book-theme
-sphinx-book-theme==1.1.3
+sphinx-book-theme==1.1.4
     # via -r requirements/doc.in
 sphinxcontrib-applehelp==2.0.0
     # via sphinx
@@ -223,14 +224,17 @@ sphinxcontrib-qthelp==2.0.0
     # via sphinx
 sphinxcontrib-serializinghtml==2.0.0
     # via sphinx
-stevedore==5.4.0
+stevedore==5.4.1
     # via doc8
 toml==0.10.2
     # via -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/test.txt
 typing-extensions==4.12.2
-    # via pydata-sphinx-theme
-urllib3==2.3.0
     # via
+    #   beautifulsoup4
+    #   pydata-sphinx-theme
+urllib3==2.2.3
+    # via
+    #   -c /home/runner/work/edx-repo-health/edx-repo-health/requirements/common_constraints.txt
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/test.txt
     #   requests
     #   responses
@@ -238,3 +242,6 @@ yarl==1.18.3
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/test.txt
     #   aiohttp
+
+# The following packages are considered to be unsafe in a requirements file:
+# setuptools

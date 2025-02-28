@@ -4,11 +4,11 @@
 #
 #    make upgrade
 #
-aiohappyeyeballs==2.4.4
+aiohappyeyeballs==2.4.6
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/quality.txt
     #   aiohttp
-aiohttp==3.11.11
+aiohttp==3.11.13
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/quality.txt
     #   github-py
@@ -26,7 +26,7 @@ astroid==3.3.8
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/quality.txt
     #   pylint
     #   pylint-celery
-attrs==24.3.0
+attrs==25.1.0
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/quality.txt
     #   aiohttp
@@ -34,13 +34,13 @@ build==1.2.2.post1
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/pip-tools.txt
     #   pip-tools
-cachetools==5.5.0
+cachetools==5.5.2
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/ci.txt
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/quality.txt
     #   google-auth
     #   tox
-certifi==2024.12.14
+certifi==2025.1.31
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/quality.txt
     #   requests
@@ -65,7 +65,7 @@ click-log==0.4.0
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/quality.txt
     #   edx-lint
-code-annotations==2.1.0
+code-annotations==2.2.0
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/quality.txt
     #   edx-lint
@@ -73,11 +73,11 @@ colorama==0.4.6
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/ci.txt
     #   tox
-coverage[toml]==7.6.10
+coverage[toml]==7.6.12
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/quality.txt
     #   pytest-cov
-diff-cover==9.2.1
+diff-cover==9.2.3
     # via -r requirements/dev.in
 dill==0.3.9
     # via
@@ -87,15 +87,15 @@ distlib==0.3.9
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/ci.txt
     #   virtualenv
-django==4.2.17
+django==4.2.19
     # via
     #   -c /home/runner/work/edx-repo-health/edx-repo-health/requirements/common_constraints.txt
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/quality.txt
-dockerfile==3.3.1
+dockerfile==3.4.0
     # via -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/quality.txt
-edx-lint==5.4.1
+edx-lint==5.6.0
     # via -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/quality.txt
-filelock==3.16.1
+filelock==3.17.0
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/ci.txt
     #   tox
@@ -115,7 +115,7 @@ gitpython==3.1.44
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/quality.txt
     #   pytest-repo-health
-google-auth==2.37.0
+google-auth==2.38.0
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/quality.txt
     #   google-auth-oauthlib
@@ -137,7 +137,7 @@ iniconfig==2.0.0
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/quality.txt
     #   pytest
-isort==5.13.2
+isort==6.0.1
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/quality.txt
     #   pylint
@@ -177,7 +177,7 @@ packaging==21.3
     #   pyproject-api
     #   pytest
     #   tox
-pbr==6.1.0
+pbr==6.1.1
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/quality.txt
     #   stevedore
@@ -197,7 +197,7 @@ pluggy==1.5.0
     #   diff-cover
     #   pytest
     #   tox
-propcache==0.2.1
+propcache==0.3.0
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/quality.txt
     #   aiohttp
@@ -215,11 +215,11 @@ pycodestyle==2.12.1
     # via -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/quality.txt
 pydocstyle==6.3.0
     # via -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/quality.txt
-pygments==2.18.0
+pygments==2.19.1
     # via
     #   diff-cover
     #   rich
-pylint==3.3.3
+pylint==3.3.4
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/quality.txt
     #   edx-lint
@@ -262,7 +262,7 @@ pytest==8.0.2
     #   pytest-asyncio
     #   pytest-cov
     #   pytest-repo-health
-pytest-aiohttp==1.0.5
+pytest-aiohttp==1.1.0
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/quality.txt
     #   pytest-repo-health
@@ -293,7 +293,7 @@ requests-oauthlib==2.0.0
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/quality.txt
     #   google-auth-oauthlib
-responses==0.25.3
+responses==0.25.6
     # via -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/quality.txt
 rich==13.9.4
     # via -r requirements/dev.in
@@ -317,7 +317,7 @@ sqlparse==0.5.3
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/quality.txt
     #   django
-stevedore==5.4.0
+stevedore==5.4.1
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/quality.txt
     #   code-annotations
@@ -333,12 +333,13 @@ tomlkit==0.13.2
     #   pylint
 tox==4.0.0
     # via -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/ci.txt
-urllib3==2.3.0
+urllib3==2.2.3
     # via
+    #   -c /home/runner/work/edx-repo-health/edx-repo-health/requirements/common_constraints.txt
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/quality.txt
     #   requests
     #   responses
-virtualenv==20.28.0
+virtualenv==20.29.2
     # via
     #   -r /home/runner/work/edx-repo-health/edx-repo-health/requirements/ci.txt
     #   tox
